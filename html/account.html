@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html lang="en-AU">
+<head>
+  <meta charset="UTF-8">
+  <title>My Account - UniToi</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/mainstyle.css">
+  
+  <script src = "../src/login.js"></script>
+  <script src = "../src/account.js"></script>
+</head>
+
+<body onload="checkLogin(); fillInfo();">
+  <nav><div id=top-nav>
+    <div id="public-nav">
+      <a href="index.html"><span id="logo"><b>UniToi</b></span></a>
+      <a href="features.html">Features</a>
+      <a href="faq.html">FAQs</a>
+      <a href="about.html">About Us</a>
+    </div>
+
+    <div id=management-nav>
+      <a class="seperator" href="management.html">Management</a>
+      <a href="user_reports.html">User Reports</a>
+    </div>
+
+    <a id=login-button href="signin.html">Sign in</a>
+  </div></nav>
+
+        <main>
+            <h1>Profile</h1>
+            <img class = "float-left" src = "../img/user.png" alt = "Image not Found"/>
+            <br><br>
+            <p id = "info_name"></p>
+            <p id = "info_email"></p>
+            <p id = "info_status"></p>
+            <br><br>
+            <br><br>
+            <br><br>
+            <p><b>Change Password:</b></p>
+                <br><br>
+        
+        
+            <form name = "change password">
+            
+                <p>Old Password: <input type="password" name="oldPwd">
+                <br><br>
+                
+                New Password: <input type="password" name="newPwd1">
+                <br><br>
+                
+                Confirm New Password: <input type="password" name="newPwd2">
+                <br><br></p>
+                
+                <br><br>
+                
+                <input type = "button"
+                    value ="Update Password"
+                    onClick="updatePassword(oldPwd, newPwd1, newPwd2)">
+                
+                <p id = "password_update_status"></p>
+            </form>
+
+            <input type = "button" value = "Log Out" onclick = "logoutProcedure()" />
+        </main>
+    
+       <footer>
+    <div class="footer-left">
+      ISYS2110 - Analysis and Design of Web Info Systems
+    </div>
+    <div class="footer-right">
+      <a href="privacy_policy.html">Privacy Policy</a>
+      <a href="sitemap.html">Sitemap</a>
+    </div>
+  </footer>
+    </body>
+</html>

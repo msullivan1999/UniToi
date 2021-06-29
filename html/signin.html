@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title>Sign In - UniToi</title>
+        <script src="../src/login.js"></script>
+        <link rel = "stylesheet" href = "../css/mainstyle.css">
+    </head>
+
+    <body onload="checkLogin()">
+    <nav><div id=top-nav>
+        <div id="public-nav">
+            <a href="index.html"><span id="logo"><b>UniToi</b></span></a>
+            <a href="features.html">Features</a>
+            <a href="faq.html">FAQs</a>
+            <a href="about.html">About Us</a>
+        </div>
+
+        <div id=management-nav>
+            <a class="seperator" href="management.html">Management</a>
+            <a href="user_reports.html">User Reports</a>
+        </div>
+            <a id=login-button href="signin.html">Sign in</a>
+        </div></nav>
+        
+        <main>
+            <h1>Sign In</h1>
+
+            <form name = "signin">
+                <p>Email: <input type="email" name="email">
+                <br><br>
+                
+                Password: <input type="password" name="pwd">
+                <br><br></p>
+                
+                <input type = "button"
+                    value ="Sign In"
+                    onClick="chkPassword(email, pwd)">
+                <p id="myLoc"> </p>
+            </form>
+
+            <p>Do not have an account? <a href= "register.html">Sign up</a><br>
+            Forgot password? <a href= "forgot_password.html">Reset password here</a></p>
+        </main>
+
+        <footer>
+          <div class="footer-left">
+            ISYS2110 - Analysis and Design of Web Info Systems
+          </div>
+          <div class="footer-right">
+            <a href="privacy_policy.html">Privacy Policy</a>
+            <a href="sitemap.html">Sitemap</a>
+          </div>
+       </footer>
+ 
+    </body>
+</html>

@@ -1,0 +1,37 @@
+.ToiletInfo, .Amenities, .Schedule, .Photos {
+    font-family: Tahoma;
+}
+
+h2 {
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+form[name="backbutton"] {
+    margin-left: 0%;
+}
+
+form[name="backbutton"] input {
+    width: 10%;
+}
+
+input[type=button], input[type=submit] {
+    font-size: 1em;
+
+    display: block;
+
+    margin-top: 0%;
+    margin-bottom: 2%;
+}
+
+input[type=submit] {
+    margin: 0%;
+    padding: 0%;
+}
+
+.Checkbox {
+    display: block;
+
+    margin: 1.5%;
+}

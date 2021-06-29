@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Schedule - UniToi</title>
+        <link rel = "stylesheet" href = "../css/mainstyle.css" />
+        <link rel = "stylesheet" href = "../css/management/management.css" />
+        <script src="../src/login.js"></script>
+    </head>
+
+    <body onload="checkLogin()">
+        <nav><div id=top-nav>
+            <div id="public-nav">
+              <a href="index.html"><span id="logo"><b>UniToi</b></span></a>
+              <a href="features.html">Features</a>
+              <a href="faq.html">FAQs</a>
+              <a href="about.html">About Us</a>
+            </div>
+    
+            <div id=management-nav>
+              <a class="seperator" href="management.html">Management</a>
+              <a href="user_reports.html">User Reports</a>
+            </div>
+            <a id=login-button href="signin.html">Sign in</a>
+        </div></nav>
+
+        <aside>
+            <ul id = "buttonList">
+                <li><a href = "facility_management.html">Facility Management</a></li>
+                <li><a href = "user_management.html">User Management</a></li>
+                <li><a href = "schedule.html">Schedule</a></li>
+            </ul>
+        </aside>
+
+        <main>
+            <h1>Schedule</h1>
+
+            <div class = "SearchSection">
+                <form name = "search">
+                    <input type = "text" placeholder="Search by building/code" name = "searchbox" />
+                    <input type = "button" value = "Search" name = "submitsearch" />
+                </form>
+            </div>
+            
+            <form name = "add">
+                <input name = "add_button" type = "submit" value = "Add Bathroom to Schedule" />
+            </form>
+
+            <table class = "List">
+                <tr>
+                    <th>Code</th>
+                    <th>Name</th>
+                    <th>Last Cleaned</th>
+                    <th>Next Cleaning</th>
+                    <th>Next Cleaner</th>
+                    <th>Options</th>
+                </tr>
+
+                <tr>
+                    <td>J123</td>
+                    <td>SIT Ground Floor</td>
+                    <td>1 hour ago</td>
+                    <td>In 45 minutes</td>
+                    <td>Chris Lime</td>
+                    <td>
+                        <form>
+                            <input type = "submit" value = "Edit" />
+                        </form>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>A931</td>
+                    <td>SIT First Floor</td>
+                    <td>3 hours ago</td>
+                    <td>In 46 minutes</td>
+                    <td>None</td>
+                    <td>
+                        <form>
+                            <input type = "submit" value = "Edit" />
+                        </form>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>S023</td>
+                    <td>Seymour Theater Ground Floor</td>
+                    <td>2 hours ago</td>
+                    <td>In 1 hour</td>
+                    <td>None</td>
+                    <td>
+                        <form>
+                            <input type = "submit" value = "Edit" />
+                        </form>
+                    </td>
+                </tr>
+            </table>
+        </main>
+
+        <footer>
+            <div class="footer-left">
+              ISYS2110 - Analysis and Design of Web Info Systems
+            </div>
+            <div class="footer-right">
+              <a href="privacy_policy.html">Privacy Policy</a>
+              <a href="sitemap.html">Sitemap</a>
+            </div>
+          </footer>
+    </body>
+</html>

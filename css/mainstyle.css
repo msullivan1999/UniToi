@@ -1,0 +1,236 @@
+/* COLOURS
+ * Dark Blue #041f60
+ * Blue Grotto #0476d0
+ * Cyan #2ceef0
+ * Tiffany Blue #b4f5f0
+ * https://www.canva.com/colors/color-palettes/diaphanous-jellyfish/
+*/
+
+/* Define font */
+@font-face {
+    font-family: Tahoma;
+    src: url("../fonts/tahoma.ttf");
+}
+
+/* Sections */
+main {
+    margin: 51px auto;
+    padding: 25px;
+    max-width: 720px;
+}
+
+body {
+    color: #041F60;
+    font-family: Tahoma;
+    margin: 0;
+    padding: 0;
+}
+
+/* Nav bars */
+nav a {
+    text-decoration: none; /* Remove anchor underline */
+    color: inherit;   
+}
+
+nav a:visited {
+    color: inherit;   
+}
+
+#management-nav {
+    display: none;
+}
+
+#top-nav {
+    background-color: #B4F5F0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    font-size: large;
+    z-index: 1;
+}
+
+#top-nav a {
+    float: left;
+    padding: 14px 18px;
+    text-align: center;
+}
+
+#top-nav a:hover {
+    background-color: #9ED7D2;   
+}
+
+nav #top-nav #login-button {
+    float: right;
+    background-color: #041F60;
+    color: #B4F5F0;
+    border-radius: 10px;
+    padding: 9px 16px;
+    margin: 5px 15px;
+}
+
+nav #greeting{
+    float: right;
+    padding: 9px 15px;
+    margin: 5px 15px;
+}
+
+nav #top-nav #login-button:active {
+    transform: translateY(1px);
+}
+
+nav #top-nav #login-button:hover {
+    background-color: #041F60;
+}
+
+.seperator {
+    border-left: 1px solid #041F60;
+}
+
+/* Footer */
+footer {
+    background-color: #B4F5F0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 15px 30px;
+    width: 100%;
+}
+
+.footer-left {
+    float: left;
+}
+
+.footer-right {
+    margin-right: 50px;
+    float: right;
+}
+
+.footer-right a {
+    margin: 0 10px;
+}
+#homepage {
+    text-align: center;
+}
+
+.button {
+    background-color: #041F60;
+    color: #B4F5F0;
+    border-radius: 10px;
+    padding: 9px 16px;
+    margin: 5px 15px;
+    margin-left: 0px;
+    text-decoration: none;
+}
+
+.search_box {
+    text-align: center;
+}
+
+.search_box input[type="search"] {
+    width: 100%;
+}
+
+.search_box input[type="submit"], .search_box input[type="button"] {
+    margin: 15px 50px;
+}
+
+/* For star rating */
+.checked {
+    color: orange;
+} 
+
+/* Text */
+h1, h2, h3, h4, h5, h6, p, a, li, tr, td, th, footer {
+    font-family: Tahoma;
+}
+
+h1 {
+    font-size: xx-large;
+    font-weight: 100;
+
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+h2 {
+    font-size: x-large;
+    letter-spacing: 0.05em;
+}
+
+h3 {
+    font-size: large;
+}
+
+h4 {
+    font-size: medium;
+}
+
+h5 {
+    font-size: small;
+}
+
+h6 {
+    font-size: smaller;
+}
+
+b {
+    font-weight: bold;
+}
+
+p {
+    /* Spacing */
+    padding-top: 0.3%;
+    padding-bottom: 0.3%;
+    padding-right: 1%;
+}
+
+.float-left{
+    float: left;
+    padding: 20px;
+}
+
+#middle-nav {
+    background-color: #041F60;
+    color: #B4F5F0;
+    position: relative;
+    text-align: center;
+    margin: auto;
+    width: 23.95%;
+    overflow: hidden;
+    font-size: small;
+    border-radius: 10px;
+}
+
+#middle-nav a {
+    float: left;
+    padding: 14px 18px;
+    text-align: center;
+    margin: auto;
+    border: 30px;
+}
+
+#middle-nav > #curr{
+    background-color: #9ED7D2;
+    color: #041F60;
+}
+
+.loc-pin {
+    width: 50px;
+}
+
+#loc-1 {
+    position: relative;
+    left: 300px;
+    top: -270px;
+    text-decoration: none;
+}
+
+#loc-2 {
+    position: relative;
+    left: 320px;
+    top: -250px;
+    text-decoration: none;
+}
